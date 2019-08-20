@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Reddit Political Analysis</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="index.html"><img
+				src="https://miro.medium.com/max/1200/1*3PBf6sHuFXsPec47pJ0mXQ.png"
+				alt="reddit python praw" width="100" height="50"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Analysis
+					</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="visualizations1.html">Liberal vs. Conservative Subreddits</a>
+							<a class="dropdown-item" href="visualizations2.html">Author Overlap in Neutral Subreddits</a>
+							<a class="dropdown-item" href="visualizations3.html">Liberal vs. Conservative Authors</a>
+							<a class="dropdown-item" href="visualizations4.html">Polling Data vs. Candidate Subreddits</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="comparisons.html">Comparing Visualizations</a>
+						</div>					
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+    <div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="jumbotron">
+						<h2>
+							An Analysis of the Political Landscape of Reddit
+						</h2>
+						<p>
+							Which way does Reddit lean politically?  Our hypothesis was that Reddit is a left-leaning, liberal platform.  Spoiler alert:  We were correct!  And now we have some data to back it up.  In order to obtain this data, we used the Python programming language through a Jupyter Notebook with a lot of help from our friends Pandas (widely-used Python library) and PRAW.  PRAW stands for Python Reddit API Wrapper.  This wrapper was extremely helpful in simplifying the process of making API calls to extract data from Reddit.  We invite you to explore the PRAW wrapper and documentation more by clicking the button below.  Check out our analysis and supporting visualizations in more detail by clicking the Analysis dropdown menu in the navigation or by selecting some of our key findings from the images and descriptions below.
+						</p>
+						<p>
+							<a class="btn btn-primary btn-large" href="https://praw.readthedocs.io/en/v3.6.1/index.html#">PRAW Documentation</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+						<a href="visualizations1.html"><img
+							src="https://raw.githubusercontent.com/jarred104/Reddit-Political-Analysis-Jarred-Brouhard/master/rszscatter.png" width="425" height="auto"
+							alt="reddit scatter"></a>
+					<h3>
+						Measuring User Engagement
+					</h3>
+					<p>
+						In part one of our analysis, we identified five of the top liberal and conservative Subreddits.  The PRAW wrapper allowed us to pull top posts.  We then created visualizations to display how engaged users were on these posts on the basis of score, upvote ratio, and comments.
+					</p>
+					<p>
+						<a class="btn" href="visualizations1.html">View details »</a>
+					</p>
+				</div>
+				<div class="col-md-4">
+						<a href="visualizations2.html"><img
+							src="https://raw.githubusercontent.com/jarred104/Reddit-Political-Analysis-Jarred-Brouhard/master/rszvenn.png" width="425" height="auto"
+							alt="reddit venn"></a>
+					<h3>
+						"Neutral" Subreddit Authors
+					</h3>
+					<p>
+						In this section of our analysis, we identified some of the top neutral political Subreddits and took a look to see how many top authors from our liberal and conservative data sets overlapped.  We ran in to some limitations but were still able to get some good information.
+					</p>
+					<p>
+						<a class="btn" href="visualizations2.html">View details »</a>
+					</p>
+				</div>
+				<div class="col-md-4">
+						<a href="visualizations4.html"><img
+							src="https://raw.githubusercontent.com/jarred104/Reddit-Political-Analysis-Jarred-Brouhard/master/piersz.png" width="425" height="auto"
+							alt="reddit pie"></a>
+					<h3>
+						Polling Pies
+					</h3>
+					<p>
+						After concluding that Reddit tends to lean left, we took a look at how the oh so many 2020 democratic candidates were doing on Reddit.  We did this by researching the Subreddit for each candidate and comparing subscribership to current (as of July 19, 2019) polling data.
+					</p>
+					<p>
+						<a class="btn" href="visualizations4.html">View details »</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

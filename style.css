@@ -1,0 +1,20 @@
+/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+body {
+    background: #80b2e0;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Giving our navbar some padding and a background color */
+  .navbar {
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+  .jumbotron {
+    background-image: url(https://miro.medium.com/max/1200/1*3PBf6sHuFXsPec47pJ0mXQ.png);
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+  }
