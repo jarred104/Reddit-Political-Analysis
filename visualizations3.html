@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Reddit Political Analysis</title>
+
+  <meta name="description" content="Source code generated using layoutit.com">
+  <meta name="author" content="LayoutIt!">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="vstyle.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img
+            src="https://miro.medium.com/max/1200/1*3PBf6sHuFXsPec47pJ0mXQ.png"
+            alt="reddit python praw" width="100" height="50"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Analysis
+              </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="visualizations1.html">Liberal vs. Conservative Subreddits</a>
+                  <a class="dropdown-item" href="visualizations2.html">Liberal vs. Conservative Authors</a>
+                  <a class="dropdown-item" href="visualizations3.html">Author Overlap in Neutral Subreddits</a>
+                  <a class="dropdown-item" href="visualizations4.html">Polling Data vs. Candidate Subreddits</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="comparisons.html">Comparing Visualizations</a>
+                </div>					
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+  <div class="card-columns">
+    <div class="card">        
+      <img src="https://github.com/jarred104/Misc-Images/blob/master/reddit.png?raw=true" class="card-img-top" alt="reddit alien">
+      <div class="card-body">
+        <h5 class="card-title">Analyzing the Posts of Overlapping Authors</h5>
+        <p class="card-text">After identifying some authors who overlapped from left & right into neutral Subreddits, we took a look at how their posts were performing in the neutral Subreddits. Post scores from left-leaning authors outweighed those of their right-leaning counterparts.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="https://raw.githubusercontent.com/jessicaklai/Project-1_Political-Landscape-of-Reddit/master/Top%20Left%20Leaning%20Authors%20in%20Neutral.png">
+      <img src="https://raw.githubusercontent.com/jarred104/Reddit-Political-Analysis-Jarred-Brouhard/master/Loverlap.png" class="card-img-top" alt="liberal reddit"></a>
+      <div class="card-body">
+        <h5 class="card-title">Left-to-Neutral Post Performance</h5>
+        <p class="card-text">This graph (click the image to enlarge) illustrates the scores of the 216 posts from the 78 overlapping authors.  There are four posts that scored over 100,000 and over half the posts scored over 50,000.  </p>
+      </div>
+    </div>
+  
+    <div class="card">
+        <a href="https://raw.githubusercontent.com/jessicaklai/Project-1_Political-Landscape-of-Reddit/master/Top%20Right%20Leaning%20Authors%20in%20Neutral.png">
+        <img src="https://raw.githubusercontent.com/jarred104/Reddit-Political-Analysis-Jarred-Brouhard/master/Roverlap.png" class="card-img-top" alt="republican reddit"></a>
+      <div class="card-body">
+        <h5 class="card-title">Right-to-Neutral Post Performance</h5>
+        <p class="card-text">This graph (click the image to enlarge) illustrates the scores of the 29 posts from the 12 overlapping authors.  No posts scored over 100,000 and over half scored below 50,000.  </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

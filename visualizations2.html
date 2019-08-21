@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Reddit Political Analysis</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+	<meta name="author" content="LayoutIt!">
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="vstyle.css">
+
+  </head>
+  <body>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html"><img
+              src="https://miro.medium.com/max/1200/1*3PBf6sHuFXsPec47pJ0mXQ.png"
+              alt="reddit python praw" width="100" height="50"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Analysis
+                </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="visualizations1.html">Liberal vs. Conservative Subreddits</a>
+                    <a class="dropdown-item" href="visualizations2.html">Liberal vs. Conservative Authors</a>
+                    <a class="dropdown-item" href="visualizations3.html">Author Overlap in Neutral Subreddits</a>
+                    <a class="dropdown-item" href="visualizations4.html">Polling Data vs. Candidate Subreddits</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="comparisons.html">Comparing Visualizations</a>
+                  </div>					
+              </li>
+            </ul>
+          </div>
+        </nav>
+  
+    <div class="card-columns">
+      <div class="card">
+        <img src="https://github.com/jarred104/Misc-Images/blob/master/reddit.png?raw=true" class="card-img-top" alt="reddit alien">
+        <div class="card-body">
+          <h5 class="card-title">How Do Post Authors Overlap from Left & Right to Neutral?</h5>
+          <p class="card-text">In this portion of the analysis, we took a look to see if the top and controversial authors we identified from the left and right-leaning Subreddits were crossing over and also posting in neutral political Subreddits.  Posts created by authors can be classified as “Top”, “Gilded”, “Hot”, “New”, or “Controversial”.  We chose to analyze top and controversial as we thought it would give us the broadest range.  Although we were unable to find a large overlap, it was evident that the left-leaning authors posted more in neutral Subreddits.</p>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/jarred104/Reddit-Political-Analysis-Jarred-Brouhard/master/Lvenn1.png" class="card-img-top" alt="liberal reddit">
+        <div class="card-body">
+          <h5 class="card-title">Left & Neutral Overlap</h5>
+          <p class="card-text">Using the PRAW wrapper, we were able to identify 78 of the top authors from our five liberal Subreddits that also had top/controversial posts in the four neutral political Subreddits that we analyzed.  We had hoped to find more, however the subscriber numbers in the neutral Subreddits are so much greater that it decreases the likelihood of a same author’s submission being in the mix.  For example, r/Politics has over 5 million subscribers.  The five liberal Subreddits that we analyzed have less than 1 million combined.</p>
+        </div>
+      </div>
+    
+      <div class="card">
+          <img src="https://github.com/jarred104/Reddit-Political-Analysis-Jarred-Brouhard/blob/master/Rvenn1.png?raw=true" class="card-img-top" alt="republican reddit">
+        <div class="card-body">
+          <h5 class="card-title">Right & Neutral Overlap</h5>
+          <p class="card-text">We identified 12 of the top authors from our five conservative Subreddits that also had top/controversial posts in the four neutral political Subreddits that we analyzed.  Another limitation that we ran in to in sorting through the data was that PRAW could only extract the top 1000 posts from each Subreddit.  This further decreased the likelihood of us finding overlap.  The reason the numbers from left, right, and neutral are not even thousands is because inactive accounts were dropped.</p>
+        </div>
+      </div>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

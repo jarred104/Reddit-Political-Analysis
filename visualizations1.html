@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Reddit Political Analysis</title>
+
+  <meta name="description" content="Source code generated using layoutit.com">
+  <meta name="author" content="LayoutIt!">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="vstyle.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img
+            src="https://miro.medium.com/max/1200/1*3PBf6sHuFXsPec47pJ0mXQ.png"
+            alt="reddit python praw" width="100" height="50"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Analysis
+              </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="visualizations1.html">Liberal vs. Conservative Subreddits</a>
+                  <a class="dropdown-item" href="visualizations2.html">Liberal vs. Conservative Authors</a>
+                  <a class="dropdown-item" href="visualizations3.html">Author Overlap in Neutral Subreddits</a>
+                  <a class="dropdown-item" href="visualizations4.html">Polling Data vs. Candidate Subreddits</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="comparisons.html">Comparing Visualizations</a>
+                </div>					
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+  <div class="card-columns">
+    <div class="card">
+      <img src="https://github.com/jarred104/Reddit-Political-Analysis-Jarred-Brouhard/blob/master/LRscatterstats.PNG?raw=true" class="card-img-top" alt="scatter plot stats">
+      <div class="card-body">
+        <h5 class="card-title">Liberal vs. Conservative Subreddit Engagement Summary</h5>
+        <p class="card-text">Based on our analysis of five top liberal and conservative Subreddits, we determined that the left-leaning Subreddits had a significantly more engaged subscriber base.  As seen in the data summary above, the top 100 posts for the left-leaning Subreddits had an average score (upvotes minus downvotes) of over 11,000 while the right-leaning Subreddits averaged just 1,400.  Top posts in the left-leaning subreddits also averaged nearly four times the amount of comments.  Upvote ratio was nearly the same for both groups, presumably due to the fact that like-minded people subscribe to each Subreddit.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://github.com/jarred104/Reddit-Political-Analysis-Jarred-Brouhard/blob/master/Lscatter1.png?raw=true" class="card-img-top" alt="top minds of reddit">
+      <div class="card-body">
+        <h5 class="card-title">Left-Leaning Subreddits</h5>
+        <p class="card-text">The example above was made by extracting information from the r/TopMindsofReddit Subreddit with the PRAW wrapper, putting the information in a Pandas data frame, and using Matplotlib to generate a scatter plot.  The y-axis represents the score of each post, the x-axis represents the upvote ratio, and the size of each bubble represents the number of comments.  This was one of the most active liberal Subreddits and you can see how it compares to the popular conservative Subreddit on this page.  Additional liberal Subreddits included in this analysis were r/FucktheAltRight, r/Democrats, r/LateStageCapitalism, and r/Progressive.  Additional data can be viewed on our <a href="comparisons.html">comparisons </a>page.</p>
+      </div>
+    </div>
+  
+    <div class="card">
+        <img src="https://github.com/jarred104/Reddit-Political-Analysis-Jarred-Brouhard/blob/master/Rscatter1.png?raw=true" class="card-img-top" alt="republican reddit">
+      <div class="card-body">
+        <h5 class="card-title">Right-Leaning Subreddits</h5>
+        <p class="card-text">The example above was made with the same methodology as the other example on this page.  This scatter plot summarizes the data gathered from r/Republican.  As you can see, the scores and comment count are greatly outweighed by its liberal counterpart.  This can partly be attributed to the fact that subscriber counts tend to be higher in left-leaning Subreddits, further contributing to our conclusion that Reddit is a liberal platform.  Additional conservative Subreddits analyzed in this portion of the project included r/Conservative, r/TheNewRight, r/NewPatriotism, and r/Conservatives.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+</body>
+</html>
